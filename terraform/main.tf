@@ -3,7 +3,7 @@ resource "proxmox_virtual_environment_vm" "dev_ubuntu24_deployer" {
   node_name = "furina"
   vm_id     = 3030
   name      = "dev-ubuntu24-deployer"
-  tags        = ["openstack", "lab", "deployer"]
+  tags        = ["openstack", "lab", "jumphost"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
