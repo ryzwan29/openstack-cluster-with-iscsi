@@ -3,6 +3,7 @@ resource "proxmox_virtual_environment_vm" "dev_ubuntu24_deployer" {
   node_name = "furina"
   vm_id     = 3030
   name      = "dev-ubuntu24-deployer"
+  tags        = ["openstack", "lab", "deployer"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
@@ -56,6 +57,7 @@ resource "proxmox_virtual_environment_vm" "dev_synology_central_storage" {
   node_name = "furina"
   vm_id     = 3031
   name      = "dev-synology-central-storage"
+  tags        = ["openstack", "lab"]
 
   bios          = "seabios"
   scsi_hardware = "virtio-scsi-pci"
@@ -125,6 +127,7 @@ resource "proxmox_virtual_environment_vm" "dev_openstack_controller_01" {
   node_name = "furina"
   vm_id     = 3036
   name      = "dev-openstack-controller-01"
+  tags        = ["openstack", "lab"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
@@ -192,6 +195,7 @@ resource "proxmox_virtual_environment_vm" "dev_openstack_controller_02" {
   node_name = "furina"
   vm_id     = 3037
   name      = "dev-openstack-controller-02"
+  tags        = ["openstack", "lab"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
@@ -259,6 +263,7 @@ resource "proxmox_virtual_environment_vm" "dev_openstack_controller_03" {
   node_name = "furina"
   vm_id     = 3038
   name      = "dev-openstack-controller-03"
+  tags        = ["openstack", "lab"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
@@ -326,6 +331,7 @@ resource "proxmox_virtual_environment_vm" "dev_openstack_compute_01" {
   node_name = "furina"
   vm_id     = 3041
   name      = "dev-openstack-compute-01"
+  tags        = ["openstack", "lab"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
@@ -393,6 +399,7 @@ resource "proxmox_virtual_environment_vm" "dev_openstack_compute_02" {
   node_name = "furina"
   vm_id     = 3042
   name      = "dev-openstack-compute-02"
+  tags        = ["openstack", "lab"]
 
   clone {
     vm_id        = 99994 # template ubuntu24
