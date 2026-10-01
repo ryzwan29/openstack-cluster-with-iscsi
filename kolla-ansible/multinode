@@ -38,6 +38,9 @@ dev-openstack-controller-01
 [storage]
 #storage01
 dev-openstack-controller-01
+# manual failover
+#dev-openstack-controller-01
+#dev-openstack-controller-01
 
 [deployment]
 localhost       ansible_connection=local
