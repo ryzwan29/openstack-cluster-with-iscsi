@@ -32,7 +32,9 @@ enable_horizon: "yes"
 enable_iscsid: "yes"
 enable_multipathd: "yes"
 glance_file_datadir_volume: "/mnt/glance"
+enable_cinder_backend_iscsi: "yes"
 skip_cinder_backend_check: "yes"
+enable_cinder_backup: "no"
 # This variable is used as the "filter" argument for the setup module.  For
 # instance, if one wants to remove/ignore all Neutron interface facts:
 # kolla_ansible_setup_filter: "ansible_[!qt]*"
